@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './images/logo.svg';
 import './css/App.css';
 import Menu from './Menu'
 import AboutMe from './AboutMe'
@@ -7,13 +6,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-          <Menu/>
+          <Menu titulo = "rrDev" m1 = "Inicio" m2="Proyectos"/>
           <div className="container">
-            <div className="row justify-content-center">
-              <div className="col mt-4 text-center">
-                <AboutMe/>
-              </div>
-            </div>
+                <AboutMe nombre = "Rodrigo Rebolledo" descripcion = "Estudiante de ingeniería informática" 
+                tecnologia1 = "Python - Django" tecnologia2 = "JS - React" tecnologia3 = "SQL - Oracle" social1 = "LinkedIn"
+                social2 = "Twitter"/>
           </div>
       </div>
     );
