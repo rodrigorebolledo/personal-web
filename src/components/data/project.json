@@ -1,0 +1,18 @@
+{
+    "projects" : [
+        {
+            "nombre" : "Urban Dreams",
+            "descripcion" : "Sitio web desarrollado en el CMS Wordpress",
+            "url" : "https://www.urbandreams.cl/",
+            "imagenurl" : "https://i.imgur.com/1Veuz74.jpg"
+        },
+        {
+            "nombre" : "Mis Perris",
+            "descripcion" : "Sitio web  desarrollado con la ayuda del framework Django",
+            "url" : "https://gitlab.com/rrebolledor/mis-perris",
+            "imagenurl" : "https://www.radiozero.cl/static/2019/01/portada_perros_acaros-t.jpg"
+        }
+    ]
+
+    
+}
