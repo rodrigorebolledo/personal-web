@@ -13,9 +13,12 @@ class App extends Component {
   }
 
   render() {
+    const style = {
+      "background-color" : "#fcf9ed"
+    }
     const { children } = this.props;
     return (
-      <div className="App">
+      <div className="App" style = { style }>
           <Menu titulo = "rrDev" m1 = "Inicio" m2="Proyectos"/>
           <div className="container">
           <Content body = {children}/>

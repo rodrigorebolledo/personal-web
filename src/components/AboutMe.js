@@ -19,7 +19,7 @@ class AboutMe extends Component {
         return(
             <div className="row justify-content-center">
             <div className="col mt-4 text-center">  
-            <div className="card mx-auto" style={{width: '18rem'}} >
+            <div className="card mx-auto mb-4" style={{width: '20rem'}} >
             <img src="https://scontent.fccp2-1.fna.fbcdn.net/v/t1.0-9/51375859_539174683155983_7731741109113585664_n.jpg?_nc_cat=106&_nc_ht=scontent.fccp2-1.fna&oh=21cd93ba31136a71cf9249cb3df6b474&oe=5CF7C712" className="card-img-top" alt="..."/>
             <div className="card-body">
               <h5 className="card-title">{ nombre }</h5>
