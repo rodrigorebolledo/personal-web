@@ -19,7 +19,7 @@ class Menu extends Component {
         "color" : "#FFF"
       }
         return(
-            <nav className="navbar navbar-expand-lg  " style = { style }>
+            <nav className="navbar navbar-expand-lg navbar-light" style = { style }>
             <a className="navbar-brand">{ titulo }</a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
