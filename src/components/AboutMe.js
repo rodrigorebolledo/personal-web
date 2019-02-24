@@ -10,12 +10,14 @@ class AboutMe extends Component {
     tecnologia2 : PropTypes.string.isRequired,
     tecnologia3 : PropTypes.string.isRequired,
     social1 : PropTypes.string.isRequired,
+    url1 : PropTypes.string.isRequired,
     social2 : PropTypes.string.isRequired,
+    url2: PropTypes.string.isRequired,
   }
 
     render(){
 
-      const { nombre, descripcion, tecnologia1, tecnologia2, tecnologia3, social1, social2 } = this.props;
+      const { nombre, descripcion, tecnologia1, tecnologia2, tecnologia3, social1, url1, social2, url2 } = this.props;
         return(
             <div className="row justify-content-center">
             <div className="col mt-4 text-center">  
@@ -31,8 +33,8 @@ class AboutMe extends Component {
               <li className="list-group-item">{ tecnologia3 }</li>
             </ul>
             <div className="card-body">
-              <a href="#" className="card-link">{ social1 }</a>
-              <a href="#" className="card-link">{ social2 }</a>
+              <a href={ url1 } className="card-link">{ social1 }</a>
+              <a href={ url2 } className="card-link">{ social2 }</a>
             </div>
           </div>
           </div>
