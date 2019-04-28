@@ -1,46 +1,13 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-
-class AboutMe extends Component {
-
-  static propTypes = {
-    nombre : PropTypes.string.isRequired,
-    descripcion : PropTypes.string.isRequired,
-    tecnologia1 : PropTypes.string.isRequired,
-    tecnologia2 : PropTypes.string.isRequired,
-    tecnologia3 : PropTypes.string.isRequired,
-    social1 : PropTypes.string.isRequired,
-    url1 : PropTypes.string.isRequired,
-    social2 : PropTypes.string.isRequired,
-    url2: PropTypes.string.isRequired,
-  }
-
-    render(){
-
-      const { nombre, descripcion, tecnologia1, tecnologia2, tecnologia3, social1, url1, social2, url2 } = this.props;
-        return(
-            <div className="row justify-content-center">
-            <div className="col mt-4">  
-            <div className="card mx-auto mb-4" style={{width: '20rem'}} >
-            <img src="https://scontent.fccp2-1.fna.fbcdn.net/v/t1.0-9/55597449_560417617698356_809731339661082624_n.jpg?_nc_cat=111&_nc_ht=scontent.fccp2-1.fna&oh=134da914d79f96948241aca00f968c7b&oe=5D0A0C5A" className="card-img-top" alt="..."/>
-            <div className="card-body">
-              <h5 className="card-title">{ nombre }</h5>
-              <p className="card-text">{ descripcion }</p>
-            </div>
-            <ul className="list-group list-group-flush">
-              <li className="list-group-item">{ tecnologia1 }</li>
-              <li className="list-group-item">{ tecnologia2 }</li>
-              <li className="list-group-item">{ tecnologia3 }</li>
-            </ul>
-            <div className="card-body">
-              <a href={ url1 } className="card-link">{ social1 }</a>
-              <a href={ url2 } className="card-link">{ social2 }</a>
-            </div>
-          </div>
-          </div>
-          </div>
-        );
-    }
-}
+import React from 'react';
+import AboutMeBox from './aboutMeBox';
+const AboutMe = () => (
+    <div className="mt-3">
+    <div className="container">
+    <div className="d-flex justify-content-between flex-wrap align-items-center">
+        <AboutMeBox/>
+    </div>
+    </div>
+    </div>
+)
 
 export default AboutMe;
